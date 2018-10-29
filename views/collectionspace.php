@@ -3,11 +3,9 @@
 ?>
 
 <div id="cspace-browser"></div>
-<script src="<?php echo get_post_meta(get_the_ID(), 'script location', true); ?>"></script>
+<script src="<?= CollectionSpace::get_browser_script_url() ?>"></script>
 <script>
-	cspacePublicBrowser(
-		<?php echo get_post_meta(get_the_ID(), 'config', true); ?>
-	);
+	cspacePublicBrowser(<?= CollectionSpace::get_browser_config() ?>);
 </script>
 
 <?php
