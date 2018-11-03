@@ -51,7 +51,7 @@ You'll usually want to add a link to your CollectionSpace browser in your site's
 
 1. Click the Screen Options button at the top right.
 
-1. In the Screen Options panel, under the "Boxes" heading, click the checkbox next to CollectionSpace Browsers.
+1. In the Screen Options panel, under the "Boxes" heading, check the checkbox next to CollectionSpace Browsers.
 
 1. Edit the menu that is selected to be displayed in the "Top Menu" location.
 
