@@ -26,6 +26,8 @@ To install the plugin, create a zip file containing this source code, and upload
 
 A typical plugin configuration requires adding and configuring a CollectionSpace browser, adding a menu option, and adding some CSS rules.
 
+The following instructions describe how to configure the plugin using the WordPress admin area, accessed at /wp-admin.
+
 ### Adding a CollectionSpace Browser
 
 Once the plugin has been activated, CollectionSpace Browsers will appear as an option in your WordPress menu. To add a collections browser to your site:
@@ -47,9 +49,13 @@ You'll usually want to add a link to your CollectionSpace browser in your site's
 
 1. In the WordPress menu, select Appearance, then Menus.
 
-1. Edit the menu that is selected to be displayed in the "Top Menu" location. This menu is usually also named "Top Menu", but it may be named differently.
+1. Click the Screen Options button at the top right.
 
-1. Open the "CollectionSpace Browsers" section, check the browser you just added, and click the Add to Menu button.
+1. In the Screen Options panel, under the "Boxes" heading, click the checkbox next to CollectionSpace Browsers.
+
+1. Edit the menu that is selected to be displayed in the "Top Menu" location.
+
+1. Open the "CollectionSpace Browsers" section on the left. Check the browser you just added, and click the Add to Menu button.
 
 1. Edit the label for the menu item. By default, it is set to the title of the browser.
 
