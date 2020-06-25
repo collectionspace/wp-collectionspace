@@ -39,9 +39,15 @@ Once the plugin has been activated, CollectionSpace Browsers will appear as an o
 1. Edit the permalink for the browser. A default will be generated for you based on the title. The permalink will be visible to your site's visitors in the browser's URL bar, so it should be short and descriptive, e.g. "collection", "paintings", "art".
 
 1. Set custom fields to configure the browser. There are two custom fields. Both are required:
-   - `script location`: The URL to the CollectionSpace browser JavaScript application, e.g. `https://nightly.collectionspace.org/cspace-browser/cspaceBrowser.min.js`. Your CollectionSpace administrator should be able to provide the correct value for your CollectionSpace installation.
+   - `script location`: The URL to the CollectionSpace browser JavaScript application, e.g. `https://unpkg.com/cspace-public-browser@1.0.0/dist/cspacePublicBrowser.min.js`. Your CollectionSpace administrator should be able to provide the correct value for your CollectionSpace installation.
 
-   - `config`: Configuration options for the CollectionSpace browser application, in JavaScript object notation (not restricted to JSON). See [TK] for a detailed description of the configuration object.
+   - `config`: Configuration settings for the CollectionSpace browser application, in JavaScript object notation (not restricted to JSON). At a minimum, specify the `gatewayUrl` setting. Your CollectionSpace administrator should be able to provide the correct value.
+   ```
+   {
+      gatewayUrl: 'https://core.dev.collectionspace.org/gateway/core',
+   }
+   ```
+   Ask your CollectionSpace administrator if any additional settings are required for your installation.
 
 ### Adding a Menu Option
 
