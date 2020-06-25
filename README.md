@@ -2,7 +2,7 @@
 
 A WordPress plugin for CollectionSpace.
 
-This plugin embeds a CollectionSpace collection browser into your WordPress site. To use this plugin, you must have a CollectionSpace 5.1 installation which has been configured to index records into an Elasticsearch cluster.
+This plugin embeds a CollectionSpace collection browser into your WordPress site. To use this plugin, you must have a CollectionSpace 6.0 (or above) installation that has been configured to index records into an Elasticsearch cluster.
 
 ## Installing the Plugin
 
