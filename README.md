@@ -118,6 +118,10 @@ Below is an example of CSS rules that may be used as a starting point for integr
 	margin-top: 0;
 }
 
+.cspace-Filter--common label {
+	font-weight: inherit;
+}
+
 /*
   Reduce the width of the footer and move it right, to avoid having
   the filter panel cover it. (Only do this for screen widths where
