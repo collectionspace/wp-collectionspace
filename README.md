@@ -10,7 +10,7 @@ To install the plugin, create a zip file containing this source code, and upload
 
 1. Download the plugin source code.
    ```
-   git clone https://github.com/ray-lee/wp-collectionspace.git
+   git clone https://github.com/collectionspace/wp-collectionspace.git
    ```
 
 1. Create a zip file named `wp-collectionspace.zip`.
