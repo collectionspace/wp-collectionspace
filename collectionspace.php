@@ -38,6 +38,7 @@ class CollectionSpace {
 		add_action('save_post_' . self::POST_TYPE, array('CollectionSpace', 'save_post'));
 		add_filter('request', array('CollectionSpace', 'request'));
 		add_filter('body_class', array('CollectionSpace', 'body_class'));
+		add_action('wp_head', array('CollectionSpace', 'add_headers'));
 	}
 
 	public static function single_template($single_template) {
@@ -72,7 +73,6 @@ class CollectionSpace {
 	}
 
 	public static function request($qvars) {
-		error_log(print_r($qvars, true));
 		if (($qvars['post_type'] ?? '') == self::POST_TYPE) {
 			foreach(array_keys($qvars) as $key) {
 				if ($key != 'name' && $key != 'post_type') {
@@ -106,15 +106,20 @@ class CollectionSpace {
 
 	public static function body_class($classes) {
 		$post = get_post();
-// 		error_log(print_r($post, true));
-// error_log(print_r($classes, true));
+
 		if (get_post_type() == self::POST_TYPE) {
 			if (($key = array_search('has-sidebar', $classes)) !== false) {
 				unset($classes[$key]);
 			}
 		}
-// error_log(print_r($classes, true));
+
 		return $classes;
+	}
+
+	public static function add_headers() {
+		if (get_post_type() == self::POST_TYPE) {
+			echo '<meta http-equiv="Content-Security-Policy" content="script-src \'unsafe-inline\' \'self\' ' . self::get_browser_script_url() . '" />' . "\n";
+		}
 	}
 }
 
