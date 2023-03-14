@@ -6,19 +6,11 @@ This plugin embeds a CollectionSpace collection browser into your WordPress site
 
 ## Installing the Plugin
 
-To install the plugin, create a zip file containing this source code, and upload it to your WordPress server. Following are instructions to do this on a Mac OS or Linux system:
+To install the plugin, download the plugin zip file, and upload it to your WordPress server.
 
-1. Download the plugin source code.
-   ```
-   git clone https://github.com/collectionspace/wp-collectionspace.git
-   ```
+1. On the [Releases](https://github.com/collectionspace/wp-collectionspace/releases) page, find the version of the plugin you want to use. Usually, you should use the latest version. In the Assets section of the version you want, click on the `wp-collectionspace.zip` file to download it to your computer.
 
-1. Create a zip file named `wp-collectionspace.zip`.
-   ```
-   zip -r wp-collectionspace.zip wp-collectionspace -x '*.git*'
-   ```
-
-1. In the WordPress menu, select Plugins, click the Add New button, then click the Upload Plugin button. Select the `wp-collectionspace.zip` file that was just created.
+1. Log in to your WordPress site. In the Dashboard menu, select Plugins, click the Add New button, then click the Upload Plugin button. Select the `wp-collectionspace.zip` file that you just downloaded.
 
 1. When the plugin installation completes, click the Activate Plugin button.
 
