@@ -1,9 +1,12 @@
 <?php
 /*
-Plugin Name: CollectionSpace
-Description: Add a CollectionSpace collections browser to your site.
-License: ECL-2.0
-*/
+ * Plugin Name: CollectionSpace
+ * Plugin URI:  https://github.com/collectionspace/wp-collectionspace
+ * Description: Add a CollectionSpace collections browser to your site.
+ * Version:     dev
+ * License:     ECL-2.0
+ * Update URI:  https://github.com/collectionspace/wp-collectionspace
+ */
 
 class CollectionSpace {
 	const POST_TYPE = 'collectionspace';
