@@ -41,7 +41,6 @@ class CollectionSpace {
 		add_action('save_post_' . self::POST_TYPE, array('CollectionSpace', 'save_post'));
 		add_filter('request', array('CollectionSpace', 'request'));
 		add_filter('body_class', array('CollectionSpace', 'body_class'));
-		add_action('wp_head', array('CollectionSpace', 'add_headers'));
 	}
 
 	public static function single_template($single_template) {
@@ -117,12 +116,6 @@ class CollectionSpace {
 		}
 
 		return $classes;
-	}
-
-	public static function add_headers() {
-		if (get_post_type() == self::POST_TYPE) {
-			echo '<meta http-equiv="Content-Security-Policy" content="script-src \'unsafe-inline\' \'self\' ' . self::get_browser_script_url() . '" />' . "\n";
-		}
 	}
 }
 
