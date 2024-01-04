@@ -2,7 +2,9 @@
 
 A WordPress plugin for CollectionSpace.
 
-This plugin embeds a CollectionSpace collection browser into your WordPress site. To use this plugin, you must have a CollectionSpace 6.0 (or above) installation that has been configured to index records into an Elasticsearch cluster.
+This plugin embeds a CollectionSpace collection browser into your WordPress site. It automates some of the steps needed to install the public browser, specifically for WordPress. For details about those steps, or to install the public browser onto a site that uses a different web server, see the [installation instructions](https://github.com/collectionspace/cspace-public-browser.js/blob/master/docs/installing.md) in the [cspace-public-browser.js](https://github.com/collectionspace/cspace-public-browser.js) project.
+
+To use this plugin, you must have a CollectionSpace 6.0 (or above) installation that has been configured to index records into an Elasticsearch cluster, and that has a running CollectionSpace public gateway service.
 
 ## Installing the Plugin
 
