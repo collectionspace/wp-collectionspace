@@ -131,3 +131,14 @@ and (min-width: 769px) {
 	}
 }
 ```
+
+## Known Bugs
+
+- Deep links to pages within the browser (for example, links to object detail pages, and links to filtered search results) occasionally stop working, and lead to a page not found error. A short-term fix for this is to re-save the WordPress post that contains the browser:
+
+  1. Log in to the admin interface of your WordPress site.
+  1. Click on CollectionSpace Browsers in the WordPress menu.
+  1. In the table of posts, click the title of the post that you added.
+  1. In the Publish section in the right sidebar, click the Update button.
+
+  This should get deep links to work again.
