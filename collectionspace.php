@@ -12,7 +12,7 @@ class CollectionSpace {
 	const POST_TYPE = 'collectionspace';
 	const POST_TYPE_SLUG = 'collection';
 
-	private static $initialized = false;
+	private static $hooks_initialized = false;
 
 	public static function init() {
 		register_post_type(self::POST_TYPE,	array(
@@ -29,16 +29,17 @@ class CollectionSpace {
 			'rewrite' => array('slug' => self::POST_TYPE_SLUG),
 		));
 
-		if (!self::$initialized) {
+		self::add_rewrite_rules();
+
+		if (!self::$hooks_initialized) {
 			self::init_hooks();
 		}
 	}
 
 	private static function init_hooks() {
-		self::$initialized = true;
+		self::$hooks_initialized = true;
 
 		add_filter('single_template', array('CollectionSpace', 'single_template'));
-		add_action('save_post_' . self::POST_TYPE, array('CollectionSpace', 'save_post'));
 		add_filter('request', array('CollectionSpace', 'request'));
 		add_filter('body_class', array('CollectionSpace', 'body_class'));
 	}
@@ -51,7 +52,7 @@ class CollectionSpace {
 		return $single_template;
 	}
 
-	public static function save_post($post_id) {
+	public static function add_rewrite_rules() {
 		$posts = get_posts(array(
 			'post_type'=> self::POST_TYPE,
 			'posts_per_page' => -1,
