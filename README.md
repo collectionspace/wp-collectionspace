@@ -132,6 +132,10 @@ and (min-width: 769px) {
 }
 ```
 
+## Upgrading the Plugin
+
+To upgrade to a new release of this plugin, follow the [installation instructions](#installing-the-plugin), using the zip file of the new release you want to use. All of your existing CollectionSpace Browser posts and configurations will be retained. Check the release notes for any special instructions pertaining to that release.
+
 ## Known Bugs
 
 - Deep links to pages within the browser (for example, links to object detail pages, and links to filtered search results) occasionally stop working, and lead to a page not found error. A short-term fix for this is to re-save the WordPress post that contains the browser:
